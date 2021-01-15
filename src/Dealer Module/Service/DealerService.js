@@ -18,6 +18,10 @@ class DealerService {
     {
         return axios.patch(DEALER_API_BASE_URL+'/changeConnectionStatus',data);
     }
+    dealerRegistration(dealer){
+        return axios.post(`${DEALER_API_BASE_URL}/register`, dealer);
+
+    }
 
 }
 

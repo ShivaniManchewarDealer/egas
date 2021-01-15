@@ -1,6 +1,6 @@
 import React from 'react'
 //import 'bootstrap/dist/css/bootstrap.css'
-import '../Css/menu.css'
+//import '../Css/menu.css'
 import connection from './connection.png'
 
 function menu() {

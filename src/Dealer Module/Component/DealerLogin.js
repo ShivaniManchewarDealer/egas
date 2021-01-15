@@ -31,7 +31,8 @@ export class DealerLogin extends Component {
           })
       }
       loginSubmit = (e) => {
-        e.preventDefault();
+        //e.preventDefault();
+    
         let login = {pancardNumber: this.state.pancardNumber,password: this.state.password};
         console.log('login => ' + JSON.stringify(login));
         DealerService.login(login)
@@ -39,7 +40,8 @@ export class DealerLogin extends Component {
         console.log('login => ' + JSON.stringify(login));
         if(this.state.answer === "Login Successfull"){
             alert("LOGIN SUCCESSFUL :)")
-            this.props.history.push('/viewConnections');
+            e.href='//viewConnections'
+           // this.props.history.push('/viewConnections');
         }
     }
     /*{
@@ -95,7 +97,7 @@ export class DealerLogin extends Component {
                                         <a href="#" class="ml-auto mb-0 text-sm">Forgot Password?</a>
                                     </div>
                                     <div class="row mb-6 px-3"> <a href="/menu"><button href=""type="submit" onClick={this.loginSubmit} class="btn btn-blue text-center">Login</button> </a></div>
-                                    <div class="row mb-4 px-3"> <small class="font-weight-bold">Don't have an account? <a class="text-danger " href="/staffregister">Register</a></small> </div>
+                                    <div class="row mb-4 px-3"> <small class="font-weight-bold">Don't have an account? <a class="text-danger " href="/dealerregister">Register</a></small> </div>
                                 </div>
                             </div>
                         </div>
