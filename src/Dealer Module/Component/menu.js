@@ -1,6 +1,6 @@
 import React from 'react'
 //import 'bootstrap/dist/css/bootstrap.css'
-import '../Css/menu.css'
+//import '../Css/menu.css'
 import connection from './connection.png'
 
 function menu() {
@@ -14,7 +14,7 @@ function menu() {
         <h3>Your Profile</h3>
         
         <p>A curated set of   ES5/ES6/TypeScript wrappers for plugins to easily add any native functionality to your Ionic apps.</p>
-        <a><button type="button" class="btn btn-danger">  View  </button></a>
+        <a href="/dealerupdate"><button type="button" class="btn btn-danger">  View  </button></a>
         </div>
      
     </div>

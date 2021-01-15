@@ -1,6 +1,23 @@
 import React, { Component } from 'react'
-import './style.css'
-export class updateProfile extends Component {
+//import './style.css'
+export class DealerUpdate extends Component {
+
+    submit = (e) => 
+
+    {
+    e.preventDefault();
+   // const { history } = this.props
+   /* let login = {pancardNumber: this.state.pancardNumber,password: this.state.password};
+    console.log('login => ' + JSON.stringify(login));
+    DealerService.login(login)
+    .then((response)=>{this.setState({answer:response.data})});
+    console.log('login => ' + JSON.stringify(login));
+    if(this.state.answer === "Login Successfull"){
+        alert("LOGIN SUCCESSFUL :)")
+       // this.props.history.push('/viewConnections');
+       e.href='/viewConnections';
+    }*/
+    }
 
     render() {
         return (
@@ -15,7 +32,7 @@ export class updateProfile extends Component {
                                 <div class="row px-9 mb-9">
                                 </div>
                                 <div className="row px-3">
-                                    <label class="mb-1"><h6 class="mb-0 text-sm"> User Id </h6></label>
+                                    <label class="mb-1"><h6 class="mb-0 text-sm"> Pancard Number</h6></label>
                                     <input className="row px-3" placeholder="Enter PAN No. " />
                                 </div>
                                 <div className="row px-3">
@@ -25,10 +42,6 @@ export class updateProfile extends Component {
                                 <div className="row px-3">
                                     <label class="mb-1"><h6 class="mb-0 text-sm"> Last Name </h6></label>
                                     <input className="row px-3" placeholder="Enter Lastname " />
-                                </div>
-                                <div className="row px-3">
-                                    <label class="mb-1"><h6 class="mb-0 text-sm"> Gender </h6></label>
-                                    <input className="row px-3" placeholder="Enter Gender " />
                                 </div>
                                 <div className="row px-3">
                                     <label class="mb-1"><h6 class="mb-0 text-sm"> Email Id: </h6></label>
@@ -43,11 +56,11 @@ export class updateProfile extends Component {
                                     <input type="password" className="row px-3" placeholder="Enter Password" />
                                 </div>
                                 <div className="row px-3">
-                                    <label class="mb-1"><h6 class="mb-0 text-sm"> Address </h6></label>
+                                    <label class="mb-1"><h6 class="mb-0 text-sm"> Confirm Password </h6></label>
                                     <input type="password" className="row px-3" placeholder="Enter city" />
                                 </div>
                                
-                                <button class="btn btn-blue text-center"> Register </button>
+                                <button  onClick={this.update} class="btn btn-blue text-center"> Register </button>
 
                             </div>
                         </div>
@@ -62,4 +75,4 @@ export class updateProfile extends Component {
         )
     }
 }
-export default updateProfile;
+export default DealerUpdate;

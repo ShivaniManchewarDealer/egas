@@ -14,6 +14,7 @@ export class DealerLogin extends Component {
           password: "",
           answer:"",
           showName: false
+          
         };
     
       }
@@ -30,7 +31,24 @@ export class DealerLogin extends Component {
             password:e.target.value
           })
       }
-      loginSubmit = (e) => {
+      loginSubmit = (e) => 
+
+      {
+      //e.preventDefault();
+     // const { history } = this.props
+      let login = {pancardNumber: this.state.pancardNumber,password: this.state.password};
+      console.log('login => ' + JSON.stringify(login));
+      DealerService.login(login)
+      .then((response)=>{this.setState({answer:response.data})});
+      console.log('login => ' + JSON.stringify(login));
+      if(this.state.answer === "Login Successfull"){
+          alert("LOGIN SUCCESSFUL :)")
+         // this.props.history.push('/viewConnections');
+         e.href='/viewConnections';
+      }
+      }
+      
+      /*{
         e.preventDefault();
         let login = {pancardNumber: this.state.pancardNumber,password: this.state.password};
         console.log('login => ' + JSON.stringify(login));
@@ -41,7 +59,7 @@ export class DealerLogin extends Component {
             alert("LOGIN SUCCESSFUL :)")
             this.props.history.push('/viewConnections');
         }
-    }
+    }*/
     /*{
         e.preventDefault();
         let login = {pancardNumber: this.state.pancardNumber,password: this.state.password};
