@@ -1,13 +1,14 @@
 import React from 'react'
-import Background from './BgGas.png'
+import Background from './gas.jpg'
 import { Link } from 'react-router-dom'
 import './HeaderComponent.css'
 var sectionStyle = {
-     //width: "1500px",
-    height: "522px",
-    //opacity: 3,
+  width: '100%',
+  height: '630px',
     backgroundImage: `url(${Background})`,
-    backgroundRepeat:"no-repeat"
+    backgroundSize: 'cover' ,
+  backgroundPosition: 'center'
+ 
   };
 function HomeComponent() {
     return (

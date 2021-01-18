@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.css'
-//import './menustyle.css'
-import '../Css/connections.css'
+import '../Css/table.css'
 import DealerService from '../Service/DealerService';
 
 
@@ -32,9 +30,10 @@ class ViewConnections extends Component
 <div className="position">
     <h1>All Customer Details</h1>
 </div>
-<div className="tableposition">
-<table class="table table-striped " >
-    <thead class="table-dark">
+
+
+<table cellpadding="0" cellspacing="0" border="1" >
+    <thead class="tbl-header">
         <tr>
             <th>Pancard</th>
             <th>First Name</th>
@@ -46,7 +45,8 @@ class ViewConnections extends Component
             <th>Connection Status</th>
         </tr>
     </thead>
-    <tbody class="table-light">
+
+    <tbody class="tbl-content">
     {
          this.state.customers.map(
             customer => 
@@ -58,15 +58,20 @@ class ViewConnections extends Component
              <td> {customer.custCity}</td>
              <td> {customer.custAddress}</td>
              <td> {customer.custContact}</td>
-             <td> {customer.custConnectionStatus}</td>
+             <td class="text-color-green-bold"> {customer.custConnectionStatus}</td>
              </tr>
     )
     }
     </tbody>
 </table>
-</div>
+
+   
+
+    
+
 <div>
-<a href="/changeconnection"><button type="button" class="btn btn-outline-danger">New Connections</button></a> 
+  <br></br>
+<a href="/changeconnection"><button type="button" class="btn btn-danger">New Connections</button></a> 
 
 </div>
 

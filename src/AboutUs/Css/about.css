@@ -1,0 +1,19 @@
+#main_content {
+    background-image: url("../Component/about2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 1300px;
+    height: 700px;
+    background-color: #2185C5;
+   
+  }
+  .top-left {
+    background-color: rgb(32, 8, 32);
+    color: wheat;
+    width: 500px;
+    height: 350px;
+    float: right;
+    margin-right: 125px;
+    margin-top:100px;
+  }
+  

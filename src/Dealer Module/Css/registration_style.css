@@ -31,13 +31,9 @@ body {
     border-right: 1px solid #EEEEEE
 }
 
-
-
-
-
 .line {
     height: 1px;
-    width: 45%;
+    width: 50%;
     background-color: #E0E0E0;
     margin-top: 10px
 }
@@ -49,6 +45,9 @@ body {
 
 .text-sm {
     font-size: 14px !important
+}
+.p {
+    text-indent: 5em;
 }
 
 ::placeholder {
@@ -70,13 +69,13 @@ body {
 input,
 textarea {
     padding: 10px 12px 10px 12px;
-    border: 1px solid rgb(12, 10, 10);
+    border: 1px solid lightgrey;
     border-radius: 2px;
     margin-bottom: 5px;
     margin-top: 2px;
     width: 100%;
     box-sizing: border-box;
-    color: #042e58;
+    color: #2C3E50;
     font-size: 14px;
     letter-spacing: 1px
 }
@@ -137,4 +136,12 @@ a {
         border-top: 1px solid #EEEEEE !important;
         margin: 0px 15px
     }
+}
+.error{
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    color: #df0303;
+  }
+  .mybutton:hover{
+    color:tan
 }

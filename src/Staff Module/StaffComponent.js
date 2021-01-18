@@ -1,12 +1,9 @@
-import React from 'react'
-
-function StaffComponent() {
-    return (
-        <div className="container mt-2">
-            <h2>Staff Delivery Module</h2>
-            <a href="/staffreg">Registration</a>
+function StaffComponent()
+{
+    return(
+        <div>
+            <h1>Staff</h1>
         </div>
     )
 }
-
 export default StaffComponent
