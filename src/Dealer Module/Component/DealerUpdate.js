@@ -69,7 +69,7 @@ export class DealerUpdate extends Component {
             password:e.target.value
           })
       }
-
+//validation
       validate = ()=>{
         let  firstNameError="";
         let  lastNameError="";
